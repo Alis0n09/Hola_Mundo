@@ -1,0 +1,157 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPqKUv5xetEDKUngE4907h3",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Alis0n09/Hola_Mundo/blob/main/Ejercicio%20con%20Google%20Colab\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "UGIJG2L520gP"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# SOFTWARE PARA CALCULADORA\n",
+        "El siguiente còdigo genera una calculadora que realiza operaciones bàsicas como: suma, resta, multiplicaciòn, division y residuo.\n",
+        "\n",
+        "El usuario debe ingresar que operacion desea realizar y como entrada se recibe 2 nùmeros para realizar la operaciòn.\n"
+      ],
+      "metadata": {
+        "id": "rDa5FD0D3BU3"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Calculadora UTE\")\n",
+        "print(\"1. Suma\\n2. Resta\\n3. Multiplicaciòn\\n4. Divison\\n5. Residuo\")\n",
+        "opcion = (input(\" Ingerese la operaciòn a realizar\\n\"))\n",
+        "valor1 = int(input(\" Ingerese el primer numero\\n\"))\n",
+        "valor2 = int(input(\" Ingerese el segundo numero\\n\"))\n",
+        "resultado = 0\n",
+        "operacion = \"Ninguna\"\n",
+        "if opcion == \"1\":\n",
+        "    resultado = valor1 + valor2\n",
+        "    operacion = \"suma\"\n",
+        "elif opcion == \"2\":\n",
+        "    resultado = valor1 - valor2\n",
+        "    operacion = \"resta\"\n",
+        "elif opcion == \"3\":\n",
+        "    resultado = valor1 * valor2\n",
+        "    operacion = \"multiplicacion\"\n",
+        "elif opcion == \"4\":\n",
+        "    resultado = valor1 / valor2\n",
+        "    operacion = \"divison\"\n",
+        "elif opcion == \"5\":\n",
+        "    resultado = valor1 % valor2\n",
+        "    operacion = \"residuo\"\n",
+        "\n",
+        "else :\n",
+        "    resultado = \"No determinado\"\n",
+        "    operacion = \"Indefinido\"\n",
+        "\n",
+        "print(f\"\\nLa {operacion} entre {valor1} y {valor2} es {resultado}\\n\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1C4gkrVG3P6f",
+        "outputId": "c65e9a1c-2e5f-4449-8cfc-010c2d24d5a0"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Calculadora UTE\n",
+            "1. Suma\n",
+            "2. Resta\n",
+            "3. Multiplicaciòn\n",
+            "4. Divison\n",
+            "5. Residuo\n",
+            " Ingerese la operaciòn a realizar\n",
+            "1\n",
+            " Ingerese el primer numero\n",
+            "2\n",
+            " Ingerese el segundo numero\n",
+            "4\n",
+            "\n",
+            "La suma entre 2 y 4 es 6\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# SOFTWARE PARA CALCULAR PERIMETRO\n",
+        " Este còdigo utiliza una funciòn para calcular el perimetro dando el valor del radio en una variable."
+      ],
+      "metadata": {
+        "id": "fL749pOk5gcF"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pi = 3.1416\n",
+        "\n",
+        "\n",
+        "def calcular_perimetro(radio):\n",
+        "    perimetro = 2 * pi * radio\n",
+        "    return perimetro\n",
+        "\n",
+        "radio = 8\n",
+        "respuesta = calcular_perimetro(radio)\n",
+        "print(f\"El perimetro del circulo {radio} es {respuesta}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kdFr5eKq6hMs",
+        "outputId": "d42638b7-f2ea-45b3-9b0c-5951634d86ec"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "El perimetro del circulo 8 es 50.2656\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
